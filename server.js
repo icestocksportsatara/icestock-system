@@ -53,3 +53,8 @@ app.post("/login", async (req, res) => {
 app.listen(3000, () => {
   console.log("Server started on port 3000");
 });
+app.get("/test-register", (req, res) => {
+  res.json({
+    message: "Register API working ✅"
+  });
+});
