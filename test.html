@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Register Test</h2>
+
+<button onclick="register()">Register User</button>
+
+<script>
+function register() {
+  fetch("https://icestock-system.onrender.com/register", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name: "Yash",
+      email: "yash@test.com",
+      password: "123456",
+      role: "player"
+    })
+  })
+  .then(res => res.text())
+  .then(data => alert(data))
+  .catch(err => alert("Error: " + err));
+}
+</script>
+
+</body>
+</html>
