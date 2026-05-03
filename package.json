@@ -1,11 +1,5 @@
-{
-  "name": "icestock-system",
-  "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+"dependencies": {
+  "express": "^4.18.2",
+  "bcrypt": "^5.1.0",
+  "jsonwebtoken": "^9.0.0"
 }
